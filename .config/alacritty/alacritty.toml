@@ -1,0 +1,73 @@
+[general]
+import = ["~/.config/alacritty/themes/noctalia.toml"]
+
+# ==============================================================================
+# ALACRITTY CONFIGURATION TEMPLATE (TOML Format)
+# ==============================================================================
+
+[window]
+# Initial window dimensions (columns and lines)
+dimensions = { columns = 100, lines = 30 }
+
+# Window padding (blank space around the text)
+padding = { x = 10, y = 10 }
+
+# Spread out additional padding evenly
+dynamic_padding = true
+
+# Background opacity (0.0 = fully transparent, 1.0 = opaque)
+opacity = 0.95
+
+# Window decorations (full, none, transparent, buttonless)
+decorations = "full"
+
+[scrolling]
+# Maximum number of lines to keep in the scrollback history
+history = 10000
+
+# Number of lines scrolled by a single mouse wheel movement
+multiplier = 3
+
+[font]
+# Font family configuration. Replace with your installed Nerd Font for icons.
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+
+# Font size in points
+size = 12.0
+
+[cursor]
+# Cursor style (Block, Underline, Beam)
+style = { shape = "Block", blinking = "On" }
+
+# Time in milliseconds for cursor blink cycle
+blink_interval = 500
+
+# ==============================================================================
+# COLOR SCHEME (One Dark Theme Example)
+# ==============================================================================
+[colors.primary]
+background = "#282c34"
+foreground = "#abb2bf"
+
+[colors.normal]
+black   = "#1e2127"
+red     = "#e06c75"
+green   = "#98c379"
+yellow  = "#d19a66"
+blue    = "#61afef"
+magenta = "#c678dd"
+cyan    = "#56b6c2"
+white   = "#abb2bf"
+
+[colors.bright]
+black   = "#5c6370"
+red     = "#e06c75"
+green   = "#98c379"
+yellow  = "#d19a66"
+blue    = "#61afef"
+magenta = "#c678dd"
+cyan    = "#56b6c2"
+white   = "#ffffff"
+
